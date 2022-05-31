@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <body>
+  <title>Ministério da Educação </title>
+  <h1>Faça seu login</h1>
+  <form name="formulario" onsubmit= "return validarFormulario()" method="post">
+  <label for="usuario">Seu usuário:</label>
+  <input type="text" name="usuario" />
+  <br>
+  <br>
+  <label for="senha">Sua senha:</label>
+  <input type="password" name="senha" />
+  <br>
+  <br>
+ </form>
+     <script>
+         function validarFormulario(){
+        var usuarioPessoa = document.forms["formulario"]["senha"].value;
+        if (usuarioPessoa == "") {
+            alert("Favor informar o seu usuário e senha!");
+            return false;     
+        }
+        else{
+            alert("Sucesso!");
+            return true;
+            
+        }
+    }
+   </script>
+   <input type="button" onclick=validarFormulario() value="Enviar"/>
+   <h2>Cadastre-se</h2>
+   <label for= "NomeCompleto"> Seu Nome:</label>
+   <input type="text" name="NomeCompleto" />
+   <br>
+   <br>
+   <label for= "CPF"> CPF:</label>
+   <input type="text" name="CPF" />
+   <br>
+   <br>
+   <label for= "Endereco"> Endereço:</label>
+   <input type="text" name="Endereco" />
+   <br>
+   <br>
+   <label for= "Telefone"> Telefone:</label>
+   <input type="text" name="Telefone" />
+   <br>
+   <br>
+</body> 
+   <input type="button" onclick=validarFormulario() value="Enviar"/>
+   
+   <div class="coluna col5">
+    <img src= "img/brasil.jpg" alt=""/>
+   </div> 
+</html> 
